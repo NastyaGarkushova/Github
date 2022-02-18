@@ -1,0 +1,119 @@
+ 1) Создать внешний репозиторий c названием TXT: == открыть  https://github.com  
+                                                 - залогиниться. Нажать кнопку New					
+                                                 - в поле Repository name ввести TXT,выбрать Public и Add a README file.
+                                                 - Нажать Create repository.
+
+2) Клонировать репозиторий TXT на локальный компьютер: 
+                                                   = Нажать Code, выбрать HTTPS, скопировать ссылку на репозиторий, в gitbash зайти в папку (где будет размещаться репозиторий).
+                                                 git clone git@github.com:NastyaGarkushova/TXT.git
+                                                   - в терминале перейти в папку TXT (cd TXT), в конце адреса расположения отображается main
+                                                 
+
+3) Внутри локального TXT создать файл “new.txt” : == touch new.txt
+                                                  == git status  (отображается красным цветом)
+
+4) Добавить файл под гит:                         == git add new.txt
+                                                  == git status (отображается зеленым)
+
+5) Закоммитить файл:                              == git commit -m "add new.txt" (файл с комментарием создан)
+
+6) Отправить файл на внешний GitHub репозиторий:  = git push (файл успешно отправлен на github)
+
+7) Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+                                                 = Заходим в vim new.txt
+                                                  i - перейти в режим редактирования:
+                                                Full name: Garkushova Anastasia Alexandrovna
+                                                Age:30
+                                                Pets: 0
+                                                Desired Salary: 500$
+                                               Сохранить и выйти из vim
+                                               - esc - выйти из режима редактрования
+                                               -:wq - записать изменения и выйти из vim.
+
+8)  Отправить изменения на внешний репозиторий:  == git add new.txt
+                                                 == git commit -m "modified new.txt"
+                                                 == git push
+
+9)  Создать файл preferences.txt: touch preferences.txt 
+
+10) В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате TXT.
+                                                     = Заходим в vim preferences.txt
+                                                  i - перейти в режим редактирования:
+                                                     - favourite movie: Good Will Hunting
+                                                     - favourite TV series: Stranger Things
+                                                     - favourite food: Asian cuisine
+                                                     - favourite season: summer
+                                                     - country you would like to visit: South Korea 
+                                                     = esc -:wq
+                                               
+11) Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT: 
+                                                 = cat > skills.txt 
+                                                skills: 
+- Software testing theory
+-client-server architecture
+- HTTP server request methods
+- HTTP server response codes
+- Structures of HTTP requests and responses 
+- JSON,XML. Their structure
+- Removing and reading logs from an external server
+- Sniffing  http web traffic through Charles and Fiddler
+- Dev Tools of web browsers (Google Chrome, FireFox)
+- VPN (How it works, why we need it, how to use, tool options)
+- Mobile testing
+- Feature of iOS,Android, guidelines
+- Build iOs applications on XCode
+- Build Android applications on Android studio
+- ADB management of android devices
+- Proxy and VPN settings on iOs and Android
+- Sniffing of mobile traffic through Charles and Fiddler on iOS and Android
+- Command line (terminal) Linux (copy, create, view, move files on services without a graphical interface)
+- Bash scripting basics,automation of routine tasks on server
+- Access to remote server
+- SQL basics (Create, Delete, Drop, Insert Into, Select, From, Where, Join)
+- Postgres database (installation, configuration and using)
+- Non-relational database Redis (installation, configuration and using)
+- Load testing in Jmeter
+- Scrum development methodology
+- Python (Learning basics. Creating a client-server applications
+
+                                          = Enter
+                                          = Ctrl+С
+
+12) Сделать коммит в одну строку:  == git add preferences.txt; git add  skills.txt
+                                   == git commit -m "add preferences.txt; skills.txt 
+
+
+13) Отправить сразу 2 файла на внешний репозиторий: 
+                                              == git push
+
+14) На веб интерфейсе создать файл bug_report.txt. : 
+                                                   == Войти в репозиторий TXT
+                                                   == Нажать кнопку Add file
+                                                   == Выбрать строку Create new file. В поле Name ввести bug_report.txt
+15)  Сделать Commit changes (сохранить) изменения на веб интерфейсе
+                                                   == В самом конце нажать кнопку Commit new file
+
+16)  На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT: 
+                                                   == Открыть файл bug_report.txt. Выбрать edit file и ввести текст: 
+
+                                                    Summary: There is opportunity input viral code in field "Имя" of form
+Descriprion: There is opportunity input viral code in field "Имя" of form. It is risky for security and business like lost profit.
+Actual result: code input
+Expected result: disable or error
+Reproduced on: Chrome
+Reproducibility: always
+For more details see attachment: https://veraksoff.info
+Steps to reproduce:    
+	1: Open URL:https://veraksoff.biz/testlab/megaform.php
+	2: Fill all fields
+        3: input viral code in field "Имя" of form from site https://virusinfo.info/showthread.php?t=20594
+        4: Click [Регистрация] button
+Severity: Critical
+Priority: Medium
+17) Сделать Commit changes (сохранить) изменения на веб интерфейсе: 
+                                                   == Нажать кнопку Commit changes
+
+18) Синхронизировать внешний и локальный репозиторий TXT:
+                                                   == git pull
+
+

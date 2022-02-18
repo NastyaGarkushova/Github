@@ -1,0 +1,135 @@
+1) Создать внешний репозиторий c названием Json: == открыть  https://github.com  
+                                                 - залогиниться. Нажать кнопку New					
+                                                 - в поле Repository name ввести JSON,выбрать Public и Add a README file.
+                                                 - Нажать Create repository.
+
+2) Клонировать репозиторий JSON на локальный компьютер: = Нажать Code, выбрать HTTPS, скопировать ссылку на репозиторий, в gitbash зайти в папку (где будет размещаться репозиторий).
+                                                   == git clone git@github.com:NastyaGarkushova/JSON.git
+                                                   - в терминале перейти в папку JSON (cd JSON), в конце адреса расположения отображается main.
+
+
+3) Внутри локального TXT создать файл “new.txt” : == touch new.json
+                                                  == git status  (отображается красным цветом)
+
+4) Добавить файл под гит:                         == git add new.json
+                                                  == git status (отображается зеленым)
+
+5) Закоммитить файл:                              == git commit -m "add new.json" (файл с комментарием создан)
+
+6) Отправить файл на внешний GitHub репозиторий:  = git push (файл успешно отправлен на github)
+
+7) Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+                                                 = Заходим в vim new.json
+                                                  i - перейти в режим редактирования:
+                                                {
+
+	                                           "full_name": "Garkushova Anastasiya Alexandrovna",
+	                                           "age": 30,
+	                                           "pets": 0,
+	                                           "desired_salary": "500$"   
+                                          
+                                                 }
+                                              Сохранить и выйти из vim
+                                               - esc - выйти из режима редактрования
+                                               -:wq - записать изменения и выйти из vim.
+
+8) Отправить изменения на внешний репозиторий:  == git add new.json
+                                                 == git commit -m "modified new.json"
+                                                 == git push
+
+9)  Создать файл preferences.json: touch preferences.json
+
+10) В файл preferences.json” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате TXT.
+                                                     = Заходим в vim preferences.json
+                                                  i - перейти в режим редактирования:
+                                                     {
+	                                                "favourite_movie": "Good Will Hunting",
+	                                                "favourite_tv_series": "Stranger Things",
+	                                                "favourite_food": "Asian cousine",
+	                                                "favourite_season": "Summer",
+	                                                "country_you_would_like_to_visit": "South Korea"
+
+                                                      }
+
+                                                     = esc -:wq
+
+
+11)  Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON: 
+                                                 = cat > skills.json
+                                                skills: 
+{
+"skills":[
+	"software testing theory",
+	"client-server architecture",
+	"HTTP Server Request Methods",
+	"HTTP server Response codes",
+	"Structures of HTTP requests and responses",
+	"JSON, XML. Their structure",
+	"Removing and reading logs from an external server",
+	"Sniffing http web traffic through Charles and Fiddler",
+	"Dev Tools of web browsers Google Chrome, FireFox",
+	"VPN. How it works, why we need it, how to use, tool options",
+	"Mobile testing",
+	"Feature of iOS, Android, guidelines",
+	"Build iOS applications on Xcode",
+	"Build Android applications on Android Studio",
+	"ADB management of android devices",
+	"Proxy and VPN settings on iOS and Android",
+	"Interception (sniffing) of mobile traffic through Charles and Fiddler on iOS and Android",
+	"Command line (terminal) Linux copy, create, view, move files on servers without a graphical interface",
+	"Bash scripting basics, automation of routine tasks on  server",
+	"Access to remote servers",
+	"SQL basics Create, Delete, Drop, Insert Into, Select, From, Where, Join",
+	"Postgres database installation, configuration and using",
+	"Non-relational database Redis installation, configuration and using",
+	"Load testing in Jmeter",
+	"Scrum development methodology",
+	"Python. Learning  basics. Creating a client-server applications"
+	]
+}
+                                                = Enter
+                                                = Ctrl+С
+
+12) Сделать коммит в одну строку: ==git add preferences.json; git add  skills.json
+                                  == git commit -m "add preferences.json; skills.json
+
+
+13) Отправить сразу 2 файла на внешний репозиторий: 
+                                              == git push
+
+14) На веб интерфейсе создать файл bug_report.json. : 
+                                                   == Войти в репозиторий JSON
+                                                   == Нажать кнопку Add file
+                                                   == Выбрать строку Create new file. В поле Name ввести bug_report.json
+
+15) Сделать Commit changes (сохранить) изменения на веб интерфейсе
+                                                   == В самом конце нажать кнопку Commit new file.
+
+16) На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON: 
+                                                   == Открыть файл bug_report.json. Выбрать edit file и ввести текст: 
+
+                                                   {
+                                                     "Summary": "There is opportunity input viral code in field 'Имя' of form",
+                                                      "Description": "There is opportunity input viral code in field 'Имя' of form. It is risky for security and business like lost profit",
+                                                       "Actual_result": "code input",
+                                                       "Expected_result": "disable or error",
+                                                       "Reproduced_on": "Chrome",
+                                                       "Reproducibility": "always",
+                                                       "For_more_details_see_attachment": "https://veraksoff.info",
+                                                        "Steps to reproduce": 
+                                                   {
+                                                       "Step_1": "Open URL:https://veraksoff.biz/testlab/megaform.php",
+	                                               "Step_2": "Fill all fields",
+                                                       "Step_3": "input viral code in field 'Имя' of form from site https://virusinfo.info/showthread.php?t=20594",
+                                                       "Step_4": "Click [Регистрация] button",
+                                                                                               }
+                                                      "Severity": "Critical",
+                                                      "Priority": "Medium"
+                                                                                                         }
+17) Сделать Commit changes (сохранить) изменения на веб интерфейсе: 
+                                                   == Нажать кнопку Commit changes
+
+18) Синхронизировать внешний и локальный репозиторий JSON:
+                                                   == git pull
+
+

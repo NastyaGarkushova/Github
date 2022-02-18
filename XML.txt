@@ -1,0 +1,141 @@
+1) Создать внешний репозиторий c названием XML: == открыть  https://github.com  
+                                                 - залогиниться. Нажать кнопку New					
+                                                 - в поле Repository name ввести XML,выбрать Public и Add a README file.
+                                                 - Нажать Create repository.
+2) Клонировать репозиторий JSON на локальный компьютер: = Нажать Code, выбрать HTTPS, скопировать ссылку на репозиторий, в gitbash зайти в папку (где будет размещаться репозиторий).
+                                                   == git clone git@github.com:NastyaGarkushova/XML.git
+                                                   - в терминале перейти в папку XML (cd XML), в конце адреса расположения отображается main.
+3) Внутри локального XML создать файл “new.xml” : == touch new.xml
+                                                  == git status  (отображается красным цветом)
+
+4) Добавить файл под гит:                         == git add new.xml
+                                                  == git status  (отображается зеленым)
+
+5) Закоммитить файл:                              == git commit -m "add new.xml" (файл с комментарием создан)
+
+6) Отправить файл на внешний GitHub репозиторий:  = git push (файл успешно отправлен на github)
+
+7) Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+                                                 = Заходим в vim new.xml
+                                                  i - перейти в режим редактирования:
+                                                         <aboutme>
+                                                 <fullname>Garkushova Anastasiya Alexandrovna</fullname>
+	                                         <age>30</age>
+	                                         <pets>0</pets>
+		                                 <desiredsalary>500$</desiredsalary>
+                                                          </aboutme>
+                                                  Сохранить и выйти из vim
+                                               - esc - выйти из режима редактрования
+                                               -:wq - записать изменения и выйти из vim.
+8) Отправить изменения на внешний репозиторий:  == git add new.xml
+                                                 == git commit -m "modified new.xml"
+                                                 == git push
+
+9)  Создать файл preferences.xml: touch preferences.xml	 
+  
+10) В файл preferences.xml” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате TXT.
+                                                     = Заходим в vim preferences.xml
+                                                  i - перейти в режим редактирования:
+                                                           <mypreferences>
+	                                                <movie>Good Will Hunting</favouritemovie>
+	                                                <tvseries>Stranger Things</tvseries>
+	                                                <food>Asian cousine</food>
+	                                                <season>Summer</season>
+	                                                <country>South Korea</country>
+                                                              </mypreferences>
+                                                                = esc -:wq
+11) Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON: 
+                                                 = cat > skills.xml
+
+                                                    <skills>
+                                   <one>software testing theory</one>
+                                   <two>client-server architecture</two>
+                                   <three>HTTP server request methods</three>
+                                   <four>HTTP server Response codes</four>
+                                   <five>Structures of HTTP requests and responses</five>
+                                   <six>JSON, XML. Their structure</six>
+                                   <seven>Removing and reading logs from an external server</seven>
+                                   <eight>Sniffing http web traffic through Charles and Fiddler</eight>
+                                   <nine>Dev Tools of web browsers Google Chrome, FireFox</nine>
+                                   <ten>VPN. How it works, why we need it, how to use, tool options</ten>
+                                   <eleven>Mobile testing</eleven>
+                                   <twelve>Feature of iOS, Android, guidelines</twelve>
+                                   <thirteen>Build iOS applications on Xcode</thirteen>
+                                   <fourteen>Build Android applications on Android Studio</fourteen>
+                                   <fifteen>ADB management of android devices</fifteen>
+                                   <sixteen>Proxy and VPN settings on iOS and Android</sixteen>
+                                   <seventeen>Interception (sniffing) of mobile traffic through Charles and Fiddler on iOS and Android</seventeen>
+                                   <eighteen>Command line (terminal) Linux copy, create, view, move files on servers without a graphical interface</eighteen>
+                                   <nineteen>Bash scripting basics, automation of routine tasks on  server</nineteen>
+                                   <twenty>Access to remote servers</twenty>
+                                   <twentyone>SQL basics Create, Delete, Drop, Insert Into, Select, From, Where, Join</twentyone>
+                                   <twentytwo>Postgres database installation, configuration and using</twentytwo>
+                                   <twentythree>Non-relational database Redis installation, configuration and using</twentythree>
+                                   <twentyfour>Load testing in Jmeter</twentyfour>
+                                  <twentyfive>Scrum development methodology</twentyfive>
+                                   <twentysix>Python. Learning  basics. Creating a client-server applications</twentysix>
+                                                                     </skills>
+                                                                      = Enter
+                                                                       = Ctrl+С
+
+12) Сделать коммит в одну строку: == git add preferences.xml; git add  skills.xml
+                                  == git commit -m "add preferences.xml; skills.xml 
+
+
+13) Отправить сразу 2 файла на внешний репозиторий: 
+                                                   == git push
+14) На веб интерфейсе создать файл bug_report.xml. : 
+                                                   == Войти в репозиторий XML
+                                                   == Нажать кнопку Add file
+                                                   == Выбрать строку Create new file. В поле Name ввести bug_report.xml
+15) Сделать Commit changes (сохранить) изменения на веб интерфейсе
+                                                   == В самом конце нажать кнопку Commit new file.
+16) На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML: 
+                                                   == Открыть файл bug_report.xml. Выбрать edit file и ввести текст: 
+
+                                                              <Bugreport>
+    
+                                       <summary>there is opportunity input viral code in field 'Имя' of form</summary>
+  
+                                       <description>there is opportunity input viral code in field 'Имя' of form. It is risky for security and business like lost profit</description
+   
+                                       <actualResult>code input</actualResult>
+    
+                                       <expectedResult>disable or error</expectedResult>
+   
+                                       <reproducedOn>Chrome</reproducedOn>
+  
+                                       <reproducibility>>always</reproducibility>
+  
+                                       <attachment>>https://veraksoff.info</attachment>
+   
+                                               <Steps to reproduce>
+     
+                                       <one>open URL:https://veraksoff.biz/testlab/megaform.php</one>
+ 
+                                       <two>fill all fields</two>
+     
+                                       <three>input viral code in field 'Имя' of form from site https://virusinfo.info/showthread.php?t=20594</three>
+   
+                                       <four>click [Регистрация] button</four>
+        
+                                               </Steps to reproduce>                                                 
+                                       <severity>critical</severity>                                  
+   
+                                       <priority>medium</priority>
+         
+                                                             </Bugreport>
+
+17) Сделать Commit changes (сохранить) изменения на веб интерфейсе: 
+                                                   == Нажать кнопку Commit changes
+
+18) Синхронизировать внешний и локальный репозиторий XML:
+                                                   == git pull
+
+	                            
+
+
+
+
+
+git add file1; git commit -m 'add file1'; git add file2; git commit -m 'add file2'; git push
