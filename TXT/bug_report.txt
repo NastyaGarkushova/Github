@@ -1,0 +1,14 @@
+ Summary: There is opportunity input viral code in field "Имя" of form
+Descriprion: There is opportunity input viral code in field "Имя" of form. It is risky for security and business like lost profit.
+Actual result: code input
+Expected result: disable or error
+Reproduced on: Chrome
+Reproducibility: always
+For more details see attachment: https://veraksoff.info
+Steps to reproduce:    
+	     1: Open URL:https://veraksoff.biz/testlab/megaform.php
+	     2: Fill all fields
+       3: input viral code in field "Имя" of form from site https://virusinfo.info/showthread.php?t=20594
+       4: Click [Регистрация] button
+Severity: Critical
+Priority: Medium
