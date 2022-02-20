@@ -1,4 +1,5 @@
- 1) Создать внешний репозиторий c названием TXT: == открыть  https://github.com  
+ # TXT HW
+ 1) Создать внешний репозиторий c названием TXT: == открыть  `https://github.com`  
                                                  - залогиниться. Нажать кнопку New					
                                                  - в поле Repository name ввести TXT,выбрать Public и Add a README file.
                                                  - Нажать Create repository.
@@ -76,8 +77,8 @@
 - Scrum development methodology
 - Python (Learning basics. Creating a client-server applications
 
-                                          = Enter
-                                          = Ctrl+С
+    = Enter
+    = Ctrl+С
 
 12) Сделать коммит в одну строку:  == git add preferences.txt; git add  skills.txt
                                    == git commit -m "add preferences.txt; skills.txt 
@@ -96,7 +97,7 @@
 16)  На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT: 
                                                    == Открыть файл bug_report.txt. Выбрать edit file и ввести текст: 
 
-                                                    Summary: There is opportunity input viral code in field "Имя" of form
+    Summary: There is opportunity input viral code in field "Имя" of form
 Descriprion: There is opportunity input viral code in field "Имя" of form. It is risky for security and business like lost profit.
 Actual result: code input
 Expected result: disable or error
@@ -119,7 +120,7 @@ Priority: Medium
 
 
 
-
+# HW JSON
 1) Создать внешний репозиторий c названием Json: == открыть  https://github.com  
                                                  - залогиниться. Нажать кнопку New					
                                                  - в поле Repository name ввести JSON,выбрать Public и Add a README file.
@@ -258,7 +259,7 @@ Priority: Medium
 
 
 
-
+# HW XML
 1) Создать внешний репозиторий c названием XML: == открыть  https://github.com  
                                                  - залогиниться. Нажать кнопку New					
                                                  - в поле Repository name ввести XML,выбрать Public и Add a README file.
